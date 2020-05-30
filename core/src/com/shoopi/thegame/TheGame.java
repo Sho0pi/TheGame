@@ -1,19 +1,19 @@
 package com.shoopi.thegame;
 
 import com.badlogic.gdx.Game;
-import com.shoopi.thegame.screens.GameScreen;
+import com.shoopi.thegame.screens.StartScreen;
 
 public class TheGame extends Game {
     public static final int WORLD_WIDTH = 128;
     public static final int WORLD_HEIGHT = 72;
 
-    GameScreen gameScreen;
+    StartScreen startScreen;
 
     @Override
     public void create() {
 
-        gameScreen = new GameScreen();
-        setScreen(gameScreen);
+        startScreen = new StartScreen();
+        setScreen(startScreen);
     }
 
     @Override
@@ -24,11 +24,11 @@ public class TheGame extends Game {
     @Override
     public void dispose() {
         super.dispose();
-        gameScreen.dispose();
+        startScreen.dispose();
     }
 
     @Override
     public void resize(int width, int height) {
-        gameScreen.resize(width, height);
+        startScreen.resize(width, height);
     }
 }
