@@ -1,0 +1,41 @@
+
+background.png
+size: 256,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+back
+  rotate: false
+  xy: 0, 0
+  size: 248, 144
+  orig: 248, 144
+  offset: 0, 0
+  index: -1
+cloud1
+  rotate: false
+  xy: 0, 576
+  size: 248, 144
+  orig: 248, 144
+  offset: 0, 0
+  index: -1
+cloud2
+  rotate: false
+  xy: 0, 432
+  size: 248, 144
+  orig: 248, 144
+  offset: 0, 0
+  index: -1
+cloud3
+  rotate: false
+  xy: 0, 288
+  size: 248, 144
+  orig: 248, 144
+  offset: 0, 0
+  index: -1
+cloud4
+  rotate: false
+  xy: 0, 144
+  size: 248, 144
+  orig: 248, 144
+  offset: 0, 0
+  index: -1
