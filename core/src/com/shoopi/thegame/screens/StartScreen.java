@@ -38,13 +38,9 @@ public class StartScreen implements Screen {
         camera = new OrthographicCamera();
         viewport = new FitViewport(TheGame.WORLD_WIDTH, TheGame.WORLD_HEIGHT, camera);
 
-        cameraCentreX = camera.viewportWidth / 2;
-        cameraCentreY = camera.viewportHeight / 2;
-
-        camera.position.set(cameraCentreX, cameraCentreY, 0);
         camera.update();
 
-        stage = new Stage();
+        stage = new Stage(viewport);
     }
 
     @Override
@@ -99,7 +95,6 @@ public class StartScreen implements Screen {
     @Override
     public void resize(int width, int height) {
         viewport.update(width, height);
-        camera.position.set(cameraCentreX, cameraCentreY, 0);
         camera.update();
     }
 
