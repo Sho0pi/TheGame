@@ -4,8 +4,8 @@ import com.badlogic.gdx.Game;
 import com.shoopi.thegame.screens.StartScreen;
 
 public class TheGame extends Game {
-    public static final int WORLD_WIDTH = 128;
-    public static final int WORLD_HEIGHT = 72;
+    public static final int WORLD_WIDTH = 256;
+    public static final int WORLD_HEIGHT = 144;
 
     StartScreen startScreen;
 
