@@ -17,6 +17,7 @@ import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.shoopi.thegame.Constants;
 import com.shoopi.thegame.TheGame;
+import com.shoopi.thegame.backgrounds.Background;
 
 public class StartScreen implements Screen {
 
@@ -26,10 +27,11 @@ public class StartScreen implements Screen {
     private Skin skin;
     private Stage stage;
 
-    private float cameraCentreX;
-    private float cameraCentreY;
+    private Background background;
 
     public StartScreen() {
+
+        background = new Background();
 
         // For now creates an empty skin.
         TextureAtlas atlas = new TextureAtlas(Constants.SKIN_ATLAS_PATH);
@@ -78,6 +80,7 @@ public class StartScreen implements Screen {
         table.row();
         table.add(exitButton).padTop(Constants.PADDING_BETWEEN_BUTTONS);
 
+        stage.addActor(background);
         stage.addActor(table);
     }
 
